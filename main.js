@@ -1,6 +1,7 @@
 const readline = require('readline');
 
 let robot = {x: 0, y: 0, face: ''};
+//clock-wise
 const direction = ['NORTH', 'EAST', 'SOUTH', 'WEST'];
 const maxPos = 5;
 const minPos = 0;
@@ -87,12 +88,12 @@ function move() {
         if (nextPos >= minPos) {
             robot.y = nextPos;
         }
-    } else if (robot.face === "EAST"){
+    } else if (robot.face === "EAST") {
         let nextPos = robot.x + 1;
         if (nextPos < maxPos) {
             robot.x = nextPos;
         }
-    } else if (robot.face === "WEST"){
+    } else if (robot.face === "WEST") {
         let nextPos = robot.x - 1;
         if (nextPos >= minPos) {
             robot.x = nextPos;
@@ -101,11 +102,25 @@ function move() {
 }
 
 function turnLeft() {
-
+    if (!robot.face) {
+        return;
+    }
+    let nextFace = direction.indexOf(robot.face) - 1;
+    if (nextFace === -1) {
+        nextFace = direction.length - 1;
+    }
+    robot.face = direction[nextFace];
 }
 
 function turnRight() {
-
+    if (!robot.face) {
+        return;
+    }
+    let nextFace = direction.indexOf(robot.face) + 1;
+    if (nextFace === direction.length) {
+        nextFace = 0;
+    }
+    robot.face = direction[nextFace];
 }
 
 
