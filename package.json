@@ -1,0 +1,19 @@
+{
+  "name": "Toy-Robot-Simulator",
+  "version": "0.0.1",
+  "dependencies": {
+    "bdd-stdin": "^0.2.0",
+    "mock-stdin": "^0.3.1"
+  },
+  "description": "The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.",
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "mocha": "^5.2.0"
+  },
+  "main": "App.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node App.js"
+  }
+}
