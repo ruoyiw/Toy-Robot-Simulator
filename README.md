@@ -1,9 +1,8 @@
 # Toy-Robot-Simulator
-===================
 
 Description
 -----------
-Node.js application for simulation of a toy robot moiving on a square tabletop, of dimension 5 units x 5 units.
+Node.js application for simulation of a toy robot moving on a square tabletop, of dimension 5 units x 5 units.
 
 How to Run the Application
 -----------
@@ -13,7 +12,8 @@ $ git clone git@github.com:ruoyiw/Toy-Robot-Simulator.git
 $ cd Toy-Robot-Simulator
 </pre>
 
-The entry point of the application is `index.js` file. To start running the application, just type: `npm start` or `node index.js`
+The entry point of the application is `index.js` file. To start running the application, just type: 
+`npm start` or `node index.js`
 
 To operate the robot by typing commands, start the app from the command prompt with no arguments provided and begin type in commands:
 
