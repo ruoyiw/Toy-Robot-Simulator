@@ -2,7 +2,7 @@
 
 Description
 -----------
-Node.js application for simulation of a toy robot moving on a square tabletop, of dimension 5 units x 5 units.
+Node.js console application for simulation of a toy robot moving on a square tabletop, of dimension 5 units x 5 units.
 
 How to Run the Application
 -----------
