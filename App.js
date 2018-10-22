@@ -15,10 +15,10 @@ App.runApplication = function() {
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
-        prompt: "Please input the command line by line, or enter 'EXIT' to exit > "
+        terminal: false
     });
-
-    rl.prompt();
+    rl.setPrompt("Please input the command line by line, or 'EXIT' to exit > \n")
+    rl.prompt(true);
 
     rl.on('line', (line) => {
         if (!line) {

@@ -48,7 +48,6 @@ describe("Robot", function() {
             expect(robot.y).toEqual(2);
             expect(robot.face).toBe("WEST");
         });
-
     });
 
     describe("When robot is placed within boundary facing north", function() {

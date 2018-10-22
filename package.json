@@ -11,9 +11,9 @@
     "jasmine-console-reporter": "^3.1.0",
     "mocha": "^5.2.0"
   },
-  "main": "App.js",
+  "main": "index.js",
   "scripts": {
     "test": "jasmine",
-    "start": "node App.js"
+    "start": "node index.js"
   }
 }
