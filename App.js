@@ -7,7 +7,11 @@ let robot = new Robot();
 
 function App() {}
 
+/**
+ * Static method to run the application
+ */
 App.runApplication = function() {
+    // read the commands from Terminal input
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
@@ -20,7 +24,7 @@ App.runApplication = function() {
         if (!line) {
             return;
         }
-        // case insensitive
+        // make the input case insensitive
         let input = line.toUpperCase().trim();
         let args = input.split(' ');
         let command = args.length === 1 ? input : args[0];
