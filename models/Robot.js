@@ -6,7 +6,6 @@ function Robot(){
     this.face = null
 }
 
-//let robot = {x: 0, y: 0, face: ''};
 //clock-wise
 const direction = ['NORTH', 'EAST', 'SOUTH', 'WEST'];
 const maxPos = 5;
